@@ -10,8 +10,8 @@ const Card = () => {
         <p className=' fontPoppins md:text-sm text-[0.8rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.  sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi!
           Enim temporibus adipisci necessitatibus facere!</p>
         <div className='gap-8 m-2 w-full flex'>
-          <button className='bg-gray-500 rounded-md p-2 md:w-[7rem]  flex justify-between'>live demo <img src={shareImg} className='w-5' alt="img" /></button>
-          <button className='bg-gray-500 rounded-md p-2  md:w-[7rem]  flex justify-around'>github <img src={github} className='w-5' alt="img" /></button>
+          <button className='bg-[#445eea] rounded-md p-2 md:w-[7rem]  flex justify-between'>live demo <img src={shareImg} className='w-5' alt="img" /></button>
+          <button className=' rounded-md p-2 bg-[#445eea] md:w-[7rem]  flex justify-around'>github <img src={github} className='w-5' alt="img" /></button>
 
         </div>
       </div>

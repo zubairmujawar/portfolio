@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-// import { a, a } from "react-router-dom";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" w-full p-2 h-16 bg-[#777979] text-white">
+    <header className=" w-full p-2 h-16 bg-[#777979] text-[#445eea]">
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
         <a to="/">
         <img
@@ -31,12 +31,11 @@ const Navbar = () => {
             className="text-2xl cursor-pointer md:hidden block duration-700"
           />
         )}
-        <ul className="hidden md:flex gap-5 px-2">
+        <ul className="hidden md:flex gap-5 px-2 ">
 
           <li className="hoverli ">
             <a
               to="/"
-              
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
