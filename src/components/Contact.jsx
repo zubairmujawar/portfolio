@@ -1,5 +1,6 @@
 import React from 'react'
 import contactImg from '../assets/contact.gif'
+import { motion } from 'framer-motion';
 const Contact = () => {
   const [result, setResult] = React.useState("");
 
@@ -28,7 +29,16 @@ const Contact = () => {
   return (
     <>
 
-      < div className='max-w-[1440px] mx-auto md:mt-[10rem] mt-10 md:flex justify-around bg-white'>
+      < motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false }}
+      transition={{ duration: 0.8, delay: 0.1 }}
+      variants={{
+        show: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 },
+      }}
+      className='max-w-[1440px] mx-auto md:mt-[10rem] mt-10 md:flex justify-around bg-white'>
         <div className='max-w-[1440px] mx-auto p-2 my-4 m-2 '>
           <h1 className='text-center text-6xl my-4 text-[#445eea]'>Let's Meet</h1>
           <form onSubmit={onSubmit} className='flex flex-col gap-1 my-10 md:w-[45rem] p-3 border border-black rounded-lg'>
@@ -43,7 +53,7 @@ const Contact = () => {
           <span>{result}</span>
         </div>
         <img src={contactImg} alt="contactImg" />
-      </div>
+      </motion.div>
       <h2 className='text-center bg-black text-white p-2'>© Copyrite 2024, All rights resirved</h2>
     </>
   )
