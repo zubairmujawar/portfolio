@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" w-full p-2 h-16 bg-[#777979] text-[#445eea]">
+    <header className=" w-full p-2 h-16 bg-[#777979] text-[#000000]">
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
         <a to="/">
         <img
-          src='https://i.pinimg.com/736x/de/93/c2/de93c2b7f7f1fd8864672037092b2b34.jpg'
+          src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Eo_circle_blue_letter-z.svg/2048px-Eo_circle_blue_letter-z.svg.png'
           alt="logo"
           className="w-[3.5rem] h-[55px] object-cover "
         />
