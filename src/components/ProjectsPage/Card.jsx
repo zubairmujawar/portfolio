@@ -12,7 +12,7 @@ const Card = () => {
         show: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 100 },
       }}
-      className="card md:w-[20rem] w-[16rem] p-3 md:m-1 border mt-[6rem] items-center border-black bg-white hover:shadow-slate-700 shadow-2xl  transition-all rounded-lg"
+      className="card md:w-[20rem] w-[16rem] p-3 md:m-1 border mt-[3rem] items-center bg-white hover:shadow-slate-700 shadow-2xl  transition-all rounded-lg"
       style={{ boxShadow: "11px 11px 8px" }}
     >
       <img

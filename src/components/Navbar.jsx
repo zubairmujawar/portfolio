@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-
+import logo from '../../public/zm-logo.png'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
         <a to="/">
         <img
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Eo_circle_blue_letter-z.svg/2048px-Eo_circle_blue_letter-z.svg.png'
+          src={logo}
           alt="logo"
           className="w-[3.5rem] h-[55px] object-cover "
         />

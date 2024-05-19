@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
+      {/* <div id="box"></div> */}
       <HomePage />
       <div className="outerBackground">
         <Services />

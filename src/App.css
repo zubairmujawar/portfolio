@@ -42,7 +42,23 @@
     rgba(255, 255, 255, 0.956)
   );
 }
-.card:hover {
+/* .card:hover {
   transform: scale(1.02);
   transition: ease-in 0.3s;
+} */
+.card{
+  border: 100px solid #445eea;
+}
+#box {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  transition: transform 0.1s ease;
+}
+.Zlogo{
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
