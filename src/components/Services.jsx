@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-// import bgImgContact from "../assets/slider_img_1.png";
+import serviceImg2 from "../assets/vector.jpg";
 const Services = () => {
   return (
-    <div className="flex flex-col min-h-[60vh] gap-3 p-5 bgImgContact">
+    <div className="flex flex-col min-h-[60vh] gap-3 p-5 " id="about">
       {/* <img src={bgImgContact} alt="img" className="bgImgContact"/> */}
       <motion.div
         initial="hidden"
@@ -50,8 +50,8 @@ const Services = () => {
         className="p-3  flex gap-2 w-full justify-evenly  flex-col-reverse md:flex-row items-center border-black  "
       >
         <img
-          className="p-3 w-[24rem] "
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCMipynwFp_x6lTsvFwCEi_eIMA9BGD0jOu4jQbaF0Ew&s"
+          className="p-3 md:w-[34rem] w-[14rem]"
+          src={serviceImg2}
           alt="img"
         />
 

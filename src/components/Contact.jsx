@@ -25,7 +25,8 @@ const Contact = () => {
     }
   };
   return (
-    <>
+   <div id="contact">
+     <>
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -90,6 +91,7 @@ const Contact = () => {
         © Copyrite 2024, All rights resirved
       </h2>
     </>
+   </div>
   );
 };
 

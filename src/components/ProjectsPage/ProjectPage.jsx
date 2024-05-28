@@ -68,7 +68,7 @@ const ProjectPage = () => {
     },
   ];
   return (
-    <div className="">
+    <div id="projects">
       <h1 className="text-center md:text-6xl  mx-8 text-4xl my-4">
         Some of my Projects
       </h1>
