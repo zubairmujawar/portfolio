@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import Card from "./Card.jsx";
+import zshopingImg from '../../assets/zshoping.png'
 import textToolImg from '../../assets/text-tool.png'
 import quizlImg from '../../assets/quiz.png'
 import weatherlImg from '../../assets/weather.png'
@@ -27,10 +28,10 @@ const ProjectPage = () => {
     },
     {
       id: 2,
-      title: "Text Tool",
+      title: "E commerce",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi! Enim temporibus adipisci necessitatibus facere!",
-      imgSrc: textToolImg,
-      demoLink: "https://text-magic-8c36d.netlify.app/",
+      imgSrc: zshopingImg,
+      demoLink: "https://z-shoping-2361.netlify.app/",
       githubLink: ''
     },
     {
@@ -43,22 +44,22 @@ const ProjectPage = () => {
     },
     {
       id: 4,
-      title: "Furniture website",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi! Enim temporibus adipisci necessitatibus facere!",
-      imgSrc: "https://www.befunky.com/images/prismic/00051caf-f04b-4ee1-bab8-b32fbe00f7ad_how-to_text-editor-13.svg",
-      demoLink: "https://text-magic-8c36d.netlify.app/",
-      githubLink: ''
-    },
-    {
-      id: 5,
       title: "Text Tool",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi! Enim temporibus adipisci necessitatibus facere!",
-      imgSrc: "https://www.befunky.com/images/prismic/00051caf-f04b-4ee1-bab8-b32fbe00f7ad_how-to_text-editor-13.svg",
+      imgSrc: textToolImg,
       demoLink: "https://text-magic-8c36d.netlify.app/",
       githubLink: ''
     },
+    // {
+    //   id: 5,
+    //   title: "Text Tool",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi! Enim temporibus adipisci necessitatibus facere!",
+    //   imgSrc: "https://www.befunky.com/images/prismic/00051caf-f04b-4ee1-bab8-b32fbe00f7ad_how-to_text-editor-13.svg",
+    //   demoLink: "https://text-magic-8c36d.netlify.app/",
+    //   githubLink: ''
+    // },
     {
-      id: 6,
+      id: 5,
       title: "Weather App",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. sint hic qui saepe unde nemo aliquam beatae? Optio quaerat eaque necessitatibus recusandae incidunt fuga ipsam eveniet, quia eligendi! Enim temporibus adipisci necessitatibus facere!",
       imgSrc: weatherlImg,
@@ -71,7 +72,7 @@ const ProjectPage = () => {
       <h1 className="text-center md:text-6xl  mx-8 text-4xl my-4">
         Some of my Projects
       </h1>
-      <div className="max-w-[1480px] min-h-[60vh] gap-[3rem]  md:px-[2rem] p-4 mx-auto flex flex-wrap md:justify-between justify-center items-center">
+      <div className="max-w-[1480px] min-h-[60vh] gap-[3rem]  md:px-[2rem] p-4 mx-auto flex flex-wrap md:justify-start justify-center items-center">
       {projectData?.map((item) => (
         <Tilt key={item.id} options={defaultOptions}>
           <Card item={item} />
