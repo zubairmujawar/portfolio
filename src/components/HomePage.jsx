@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import '../components/Box'
+// import '../components/Box'
 const HomePage = () => {
   const el = React.useRef(null);
 
@@ -12,13 +12,11 @@ const HomePage = () => {
       loop: true,
     });
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
   return (
     <div className="homepage flex justify-center items-center">
-      
       <div className="info  flex flex-wrap gap-2 text-black flex-col m-3 justify-center items-center">
         <h2 className="text-[3rem] fontPoppins text-[#445eea]  font-bold">
           WELCOME

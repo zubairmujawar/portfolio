@@ -42,11 +42,19 @@
     rgba(255, 255, 255, 0.956)
   );
 }
-/* .card:hover {
-  transform: scale(1.02);
-  transition: ease-in 0.3s;
-} */
-.card{
+.bgImgContact {
+  background: linear-gradient(
+      rgba(253, 253, 253, 0.83),
+      rgba(231, 229, 229, 0.789)
+    ),
+    url("./assets/slider_img_1.png");
+  /* width: full;
+  height: 100vh; */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
   border: 100px solid #445eea;
 }
 #box {
@@ -57,7 +65,7 @@
   background-color: #3498db;
   transition: transform 0.1s ease;
 }
-.Zlogo{
+.Zlogo {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;

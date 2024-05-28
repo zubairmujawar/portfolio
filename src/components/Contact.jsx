@@ -35,7 +35,7 @@ const Contact = () => {
           show: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 100 },
         }}
-        className="max-w-[1440px] mx-auto md:mt-[10rem] mt-10 md:flex justify-around bg-white"
+        className="max-w-[1440px] flex-wrap mx-auto md:mt-[10rem] mt-10 md:flex justify-around bg-white"
       >
         <div className="max-w-[1440px] mx-auto p-2 my-4 m-2 ">
           <h1 className="text-center text-6xl my-4 text-[#445eea]">
